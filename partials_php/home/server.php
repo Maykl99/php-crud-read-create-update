@@ -10,6 +10,9 @@ if($result && $result->num_rows>0):
     while($row= $result->fetch_assoc()){
         $results[] = $row;
     }
+elseif($result):
+    echo "Non ci sono risultati";
+else: echo "Query error";
 endif;
 
 
