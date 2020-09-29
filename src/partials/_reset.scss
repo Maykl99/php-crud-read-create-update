@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.table{
+    margin-bottom: 0;
+}
+
+thead>tr>th{
+    color: rgb(204, 149, 149);
+}
+
+tbody>tr>th{
+    color: rgb(212, 212, 212);
+}
