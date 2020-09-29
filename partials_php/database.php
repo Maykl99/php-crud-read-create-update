@@ -1,4 +1,5 @@
 <?php
+    #STABILISCO LA CONNESSIONE AL DATABASE
     include __DIR__.'/env.php';
 
     # connection

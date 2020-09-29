@@ -1,5 +1,5 @@
 <?php
-
+#SHOW QUERY CON CLAUSOLA WHERE SPECIFICA, valore id ottenuto tramite formato get
 include __DIR__.'/../database.php';
 
 if(empty($_GET['id'])){

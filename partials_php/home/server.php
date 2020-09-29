@@ -1,5 +1,5 @@
 <?php
-
+#QUERY ESTRAZIONE E MOSTRA DEI DATI DAL DATABASE SELEZIONATO
 include __DIR__.'/../database.php';
 
 $sql = "SELECT id,room_number, floor FROM stanze";

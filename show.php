@@ -1,5 +1,6 @@
 <?php
-    
+    #PAGINA INTERNA,VISUALIZZA IL COMPONENTE SELEZIONATO
+
     include __DIR__.'/partials_php/templates/header.php';
     include __DIR__.'/partials_php/show/server.php';
 ?>
