@@ -21,9 +21,14 @@
                                 <th><?php echo $result["id"] ?></th>
                                 <th><?php echo $result["room_number"] ?></th>
                                 <th><?php echo $result["floor"] ?></th>
-                                <th>View</th>
-                                <th>Update</th>
-                                <th>Delete</th>
+                                <th><a href="show.php?id=<?php echo $result["id"] ?>">View</a></th>
+                                <th><a href="show.php?id=<?php echo $result["id"] ?>">Update</a></th>
+                                <th>
+                                    <form action="partials_php/delete/server.php" method="post">
+                                        <input class="btn btn-danger" type="submit" value="Delete">
+                                        <input type="hidden" name="id" value="<?php echo $result["id"] ?>">
+                                    </form>
+                                </th>
                             </tr>
                         <?php }; ?>
                     
