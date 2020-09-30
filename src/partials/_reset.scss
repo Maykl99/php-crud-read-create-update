@@ -13,9 +13,21 @@ body{
 }
 
 thead>tr>th{
-    color: rgb(204, 149, 149);
+    color:white;
 }
 
 tbody>tr>th{
     color: rgb(212, 212, 212);
+}
+
+.update_all{
+    margin-top: 10px !important;
+}
+
+.update_all a{
+    color: white !important;
+}
+
+#alert{
+    cursor: pointer;
 }

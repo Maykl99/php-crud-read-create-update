@@ -1,5 +1,6 @@
 <?php
-#SHOW QUERY CON CLAUSOLA WHERE SPECIFICA, valore id ottenuto tramite formato get, visualizza una pagina interna dinamica //-> show.php
+# UPDATE DI TUTTI I DATI DATABASE ATTRAVERSO LA CLAUSOLA WHERE e con l'id e valore di modifica presi tramite formato post da un campo input
+
 include __DIR__.'/../database.php';
 
 if(empty($_GET['id'])){
@@ -22,3 +23,5 @@ endif;
 
 
 $conn->close();
+
+

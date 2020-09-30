@@ -10914,10 +10914,22 @@ body {
 }
 
 thead > tr > th {
-  color: #cc9595;
+  color: white;
 }
 
 tbody > tr > th {
   color: #d4d4d4;
+}
+
+.update_all {
+  margin-top: 10px !important;
+}
+
+.update_all a {
+  color: white !important;
+}
+
+#alert {
+  cursor: pointer;
 }
 
