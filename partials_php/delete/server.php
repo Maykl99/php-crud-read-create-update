@@ -7,9 +7,15 @@ if(empty($_POST['id'])){
     die('nessun id');
 }
 
+
+$sql = "DELETE FROM stanze WHERE id=?";
+$stmt=$conn->prepare($sql); // preparo la mia sql
+$stmt->bind_param('i',$id); // lego la query sostituendo il segnaposto con l'id
+
 $id=$_POST['id'];
-$sql = "DELETE FROM stanze WHERE id=$id";
-$result = $conn->query($sql);    
+$stmt->execute();
+
+    
 
 
 $conn->close();
