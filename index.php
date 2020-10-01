@@ -6,7 +6,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 offset-md-1">
+            <div class="col-md-12">
              <!-- CONDIZIONI LOGICHE, in base al get passato stamperò un elemento  -->  
             <?php if(isset($_GET['id'])&& $_GET['update']==1) { ?>
                 <div id="alert" class="alert alert-success" role="alert">Operazione riuscita, numero stanza modificato!</div><span id="click"></span>
@@ -17,7 +17,7 @@
             <?php if(isset($_GET['id']) && $_GET['update']==2) { ?>
                 <div id="alert" class="alert alert-success" role="alert">Operazione riuscita, elementi modificati!</div><span id="click"></span>
             <?php } ?>
-            <?php if(isset($_GET['id']) && $_GET['update']==0) { ?>
+            <?php if(isset($_GET['id']) && $_GET['update']==0 && $_GET['delete']==0) { ?>
                 <div id="alert" class="alert alert-success" role="alert">Operazione riuscita, nessun elemento modificato!</div><span id="click"></span>
             <?php } ?>
 
@@ -29,8 +29,10 @@
                             <th scope="col">Piano</th>
                             <th scope="col"></th>
                             <th scope="col">Modifica</th>
-                            <th scope="col">Elimina valori</th>            
+                            <th scope="col">Elimina valori</th>         
+                            <th><a class="btn btn-primary" href="insertCreate.php">Inserisci una stanza</a></th>  
                         </tr>
+                        
                     </thead>
                     <tbody>
                     
@@ -40,6 +42,7 @@
                                 <th><?php echo $result["room_number"] ?></th>
                                 <th><?php echo $result["floor"] ?></th>
                                 <th><a class="btn btn-primary" href="show.php?id=<?php echo $result["id"] ?>">View</a></th>
+
                                 <th>
                                     <!-- form di modifica -->
                                     <form action="partials_php/update/server.php" method="post">
